@@ -1,0 +1,17 @@
+{
+  "startFrontendDev": {
+    "description": "Start the frontend development server",
+    "command": "npm start --prefix client",
+    "args": []
+  },
+  "startBackendDev": {
+    "description": "Start the backend development server",
+    "command": "node server.js",
+    "args": []
+  },
+  "seedDatabase": {
+    "description": "Seed the database",
+    "command": "node scripts/seed-db.js",
+      "args": []
+  }
+}
