@@ -1,0 +1,81 @@
+/* src/styles/global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default browser styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Apply basic font settings for the body */
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Default styling for forms and inputs */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+textarea,
+select {
+  @apply w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500;
+}
+
+
+/* Base styles for links */
+a {
+  text-decoration: none;
+  color: #007bff;
+    @apply focus:outline-none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+a:active {
+  color: #0056b3;
+}
+
+/* Ensure accessibility standards are met */
+[role="button"] {
+    cursor: pointer;
+}
+
+
+/* Utility classes */
+.max-w-xs {
+    max-width: 20rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
